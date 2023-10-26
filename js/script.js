@@ -44,7 +44,7 @@ async function realizarConsulta() {
 
     var meuCabecalho = new Headers();
     meuCabecalho.append("Content-Type", "application/json");
-    meuCabecalho.append("Authorization", "Bearer " + APIKey);
+    meuCabecalho.append("Authorization", `"Bearer " + ${APIKey}"`);
 
     dvResultado.style.display = "block";
     dvResultado.innerHTML = '<div class="d-flex justify-content-center"><span class="spinner-border text-warning spinner-border-sm" role="status" aria-hidden="true"></span> Carregando...</div>';
@@ -140,7 +140,7 @@ function reconhecerVoz(){
 function converteTextoAudioAzure(texto){
 
     var myHeaders = new Headers();
-    myHeaders.append("Ocp-Apim-Subscription-Key", APIAzure);
+    myHeaders.append("Ocp-Apim-Subscription-Key", `"${APIAzure}"`);
     myHeaders.append("Content-Type", "application/ssml+xml");
     myHeaders.append("X-Microsoft-OutputFormat", "audio-16khz-128kbitrate-mono-mp3");
     myHeaders.append("User-Agent", "curl");
