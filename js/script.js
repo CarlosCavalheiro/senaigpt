@@ -2,8 +2,8 @@
 // Data: 24/10/2023
 
 var endPoint = "https://api.openai.com/v1/chat/completions";
-var APIKey = ${{secrets.OPENAI_BRANDAO_API_KEY }}; //OPENAI_BRANDAO_API_KEY | OPENAI_API_KEY
-var APIAzure = ${{secrets.AZURE_API_KEY}};
+var APIKey = $secrets.OPENAI_BRANDAO_API_KEY; //OPENAI_BRANDAO_API_KEY | OPENAI_API_KEY
+var APIAzure = $secrets.AZURE_API_KEY;
 
 var dvResultado = document.getElementById("dv-resposta");
 var botaoBusca = document.querySelector("#bt-busca");
