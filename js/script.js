@@ -3,7 +3,7 @@
 
 var endPoint = "https://api.openai.com/v1/chat/completions";
 var APIKey = ${{ env.OPENAI_BRANDAO_API_KEY}}; //OPENAI_BRANDAO_API_KEY | OPENAI_API_KEY
-var APIAzure = ${{ envsecrets.AZURE_API_KEY}};
+var APIAzure = ${{ env.AZURE_API_KEY}};
 
 var dvResultado = document.getElementById("dv-resposta");
 var botaoBusca = document.querySelector("#bt-busca");
