@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd - FAQ SENAI</title>
+    <!--Fontes Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Bootstrap Icons e CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="css/site.css">
+
+</head>
+<body>
+    <div class="barra-lateral"></div>
+    <div class="container">
+        
+        <div class="d-flex col-12 justify-content-end ">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked onclick="toggleMode()">
+                <label class="btn btn-outline-warning" for="btnradio1"><i class="bi bi-lightbulb-fill"></i></label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick="toggleMode()">
+                <label class="btn btn-outline-secondary" for="btnradio2"><i class="bi bi-moon-fill"></i></label>
+              </div>
+        </div>
+
+        <div>
+            <img src="images/senai_robo.png" alt="Logo" class="senai-robo" >
+        </div>
+        
+        <div class="txt-titulo">
+            <p>R2 D3005</p>
+        </div>  
+
+        <div class="alert alert-warning alert-dismissible fade show col-9" role="alert">
+            <strong>Como usar: </strong> Digite a sua pergunta e tecle enter, ou faça sua pergunta por audio mantendo pressionado o botão.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="dv-busca col-9">
+            <input type="text" placeholder="Pergunte algo..." class="form-control txt-busca" id="txt-busca">
+            <button class="btn btn-danger rounded-circle btn-busca" id="bt-busca"><i class="bi bi-mic-fill icon-busca"></i></button>
+        </div>
+
+        <div class="dv-resposta card col-9" id="dv-resposta">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="paraOuvir();"></button>
+        </div>
+
+        <div>
+            <audio id="audio"></audio>
+        </div>
+
+        <div class="dv-senai">
+            <img src="images/senai_logo.png" class="senai-logo" alt="">
+        </div>
+    </div>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!--JS-->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

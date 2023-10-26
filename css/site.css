@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #f5f5f5;
+    --cor-vermelho: #DD203C;
+    --cor-dark: #202020;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+.dark-mode {
+    background-color: var(--cor-dark);
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.senai-robo {
+    width: auto;
+    height: 150px;
+}
+
+.senai-logo {
+    width: auto;
+    height: 30px;
+}
+
+.txt-titulo {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.txt-busca {
+    border: 0px solid #000;
+    border-radius: 0px;
+    border-bottom: 1px solid #000;
+    font-family: 'Inter', sans-serif;
+}
+.txt-busca:focus {
+    border: 0px solid #000;
+    border-radius: 0px;
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+    outline: none;
+}
+
+.dv-busca {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.dv-senai {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dv-resposta {
+    padding: 16px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.btn-busca {
+    margin: 0px 10px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.icon-busca {
+    width: 100%;
+    height: 100%;
+    font-size: x-large;
+}
+
+.barra-lateral {
+    width: 48px;
+    height: 100vh;
+    background-color: var(--cor-vermelho);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
